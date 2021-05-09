@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>w e e k 10</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+
+	<style>
+		body {font-family: 'Arimo', sans-serif;}		}
+		.material-icons.md-18 {font-size:18px;}
+		.material-icons.md-24 {font-size:24px;}
+		.material-icons.md-36 {font-size:36px;}
+		.material-icons.md-48 {font-size:48px;}
+		.badge {
+		  height: auto;
+		  width: auto;
+		  display: table-cell;
+		  text-align: center;
+		  vertical-align: middle;
+		  border-radius: 50%;
+		  background-color:blue;
+		  font-size:20px;
+		}
+	</style>
+</head>
+
+<body style="background-color:#CAFA9E">
+
+	<!-- Nav Bar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container">
+	    <a class="navbar-brand" href="#">w e e k 10</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	      <ul class="navbar-nav">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#">Home</a>
+	        </li>
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Category
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	            <li><a class="dropdown-item" href="#">Food</a></li>
+	            <li><a class="dropdown-item" href="#">Clothes</a></li>
+	            <li><a class="dropdown-item" href="#">...</a></li>
+	          </ul>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">About Us</a>
+	        </li>
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            More
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	            <li><a class="dropdown-item" href="#">Recently viewed</a></li>
+	            <li><a class="dropdown-item" href="#">QnA</a></li>
+	            <li><a class="dropdown-item" href="#">...</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	      <ul class = "navbar-nav ms-auto">
+	      	  <li class="nav-item">
+	          	<a class="nav-link btn btn-success" aria-current="page" href="./2019075041.html" data-bs-toggle="modal" data-bs-target="#loginModal" role="button" style="color:white">Log In</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>	
+	
+	<!-- Modal HW-->
+	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="loginModalLabel"><i class="fas fa-sign-in-alt"></i>&nbsp; <b>Log in</b></h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <div class = "row">
+	        	<div class = "col-md-6">
+	        		<button type = "button" class = "btn btn-outline-primary w-100"><i class="fab fa-google"></i>&nbsp; &nbsp; Log in with Google</button>
+	        	</div>
+	        	<div class = "col-md-6">
+	        		<button type = "button" class = "btn btn-outline-danger w-100"><i class="fas fa-envelope"></i>&nbsp; &nbsp; Log in with E-mail</button>
+	        	</div>
+	        	<div class = "col-md-12">
+	        		<button type = "button" class = "btn btn-outline-warning w-100" onClick="location.href='2019075041.html'"><i class="fas fa-envelope"></i>&nbsp; &nbsp; Sign Up with E-mail</button>
+	        	</div>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+
+	
+	
+	<div class="container">
+		<div class="py-5 text-center">
+			<span class="material-icons md-48">receipt</span>
+			<h2><b>Checkout Form</b></h2>
+			<p class="lead"> Below is an example form built entirely with Bootstrap's form controls.<br> Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+		</div>
+		<div class="row g-5">
+			<div class="col-md-7 col-lg-8">
+				<h4 class="mb-2"><b>Billing address</b></h4>
+				<form>
+					<div class="row g-3">
+						<div class="col-sm-6">
+							<label class="form-label">First Name</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="col-sm-6">
+							<label class="form-label">Last Name</label>
+							<input type="text" class="form-control">
+						</div>
+
+						<div class="col-sm-12">
+							<label class="form-label">User Name</label>
+							<div class="input-group flex-nowrap">
+								<span class="input-group-text">@</span>
+								<input class="form-control" type="text" placeholder="Username"></input>
+							</div>
+						</div>
+						
+						<div class="col-sm-12">
+							<label class="form-label">Email (Optional)</label>
+							<input class="form-control" type="text" placeholder="you@example.com"></input>
+						</div>
+						
+						<div class="col-sm-12">
+							<label class="form-label">Address</label>
+							<input class="form-control" type="text" placeholder="1234 Main St"></input>
+						</div>
+						
+						<div class="col-sm-12">
+							<label class="form-label">Address 2 (Optional)</label>
+							<input class="form-control" type="text" placeholder="Apartment or suite"></input>
+						</div>
+						
+					  <div class="col-md-6">
+					    <label class="form-label">Country</label>
+					    <select class="form-select">
+					      <option>Choose...</option>
+					      <option>...</option>
+					    </select>
+					  </div>
+					  <div class="col-md-4">
+					    <label class="form-label">State</label>
+					    <select class="form-select">
+					      <option>Choose...</option>
+					      <option>...</option>
+					    </select>
+					  </div>
+					  <div class="col-md-2">
+					    <label class="form-label">Zip</label>
+					    <input type="text" class="form-control">
+					  </div>
+					</div>
+					
+					<hr>
+					
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox">
+					  <label class="form-check-label">
+					    Shipping address is the same as my billing address.
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox">
+					  <label class="form-check-label">
+					    Save this information for next time.
+					  </label>
+					</div>
+					
+					<hr>
+					
+					<div class="col-sm-12 mb-3">
+						<h3>Payment</h3>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="Payment" checked>
+							<label class="form-check-label"> Credit Card</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="Payment">
+							<label class="form-check-label"> Debit Card</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="Payment">
+							<label class="form-check-label"> PayPal</label>
+						</div>
+					</div>	
+								
+					<div class="row">		
+						<div class="col-md-6">
+							<label class="form-label">Name on card</label>
+							<input type="text" class="form-control">
+							<p style="font-size:15px; color:grey;">Full name as displayed on card</p>
+						</div>
+						<div class="col-md-6">
+							<label class="form-label">Credit Card Number</label>
+							<input type="text" class="form-control" placeholder="AAAA-BBBB-CCCC-DDDD">
+						</div>
+					</div>	
+					
+					<div class="row">		
+						<div class="col-md-3">
+							<label class="form-label">Expiration</label>
+							<input type="text" class="form-control" placeholder="MM/YY">
+						</div>
+						<div class="col-md-3">
+							<label class="form-label">CVV</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>	
+						
+					<hr>
+					
+					<div>
+						<button class="w-100 mb-3 btn btn-primary" type="submit" style="font-size:20px">Continue to checkout</button>
+					</div>
+				</form>
+			</div>
+			
+			<!--  Your Cart  -->
+			<div class="col-md-5 col-lg-4">
+				<div class="row">
+					<div class="col-sm-10">
+						<h4 class="text-primary mb-2" style="float:left"><b>Your cart</b></h4>
+					</div>
+					<div class="col-sm-2">
+						<span class="badge mb-2" style="float:right">3</span>
+					</div>
+				</div>
+
+				<ul class="list-group">
+					<li class="list-group-item">
+						<div style="float:left;">
+							<h6>1st Product Name</h6>
+							<small class="text-muted">Brief description</small>
+						</div>
+						<div style="float:right;">
+							<p class="text-danger" style="font-size:20px;">$12</p>	
+						</div>			
+					</li>
+					
+					<li class="list-group-item">
+						<div style="float:left;">
+							<h6>2nd Product</h6>
+							<small class="text-muted">Brief description</small>
+						</div>
+						<div style="float:right;">
+							<p class="text-danger" style="font-size:20px;">$8</p>	
+						</div>			
+					</li>
+					
+					<li class="list-group-item">
+						<div style="float:left;">
+							<h6>3rd Item</h6>
+							<small class="text-muted">Brief description</small>
+						</div>
+						<div style="float:right;">
+							<p class="text-danger" style="font-size:20px;">$5</p>	
+						</div>			
+					</li>
+										
+					<li class="list-group-item text-success">
+						<div style="float:left;">
+							<h6>Promo Code</h6>
+							<small>ExampleCode</small>
+						</div>
+						<div style="float:right;">
+							<p style="font-size:20px;">-$5</p>	
+						</div>			
+					</li>
+					
+					<li class="list-group-item" style="background-color:#EEEDED; vertical-align:middle; line-height:0px">
+						<div style="float:left;">
+							<h5><b>Total (USD)</b></h5>
+						</div>
+						<div style="float:right;">
+							<h5><b>$20</b></h5>
+						</div>			
+					</li>
+				</ul>
+				
+				<!-- Promo Code -->
+				<div class="card mt-3">
+					<div class="card-body">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Promo Code">
+							<span class="input-group-append">
+								<button class="button btn-secondary form-control" type="button">Redeem</button>
+							</span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<!--  Footer  -->
+			<footer style="text-align:center;">
+				<p class="mt-5 mb-3 text-muted">&copy; 2019-2021 Han Ui Jeong</p>
+				<div class="row mb-3">
+					<div class="col-md-12">
+							<a href="javascript:alert('Your privacy is safe with me :)');" onfocus="this.blur()">Privacy</a>
+							 &nbsp; 
+							<a href="javascript:alert('HYU 2021 WEB APP DEVELOP');" onfocus="this.blur()">Terms</a>
+							 &nbsp; 
+							<a href="javascript:alert('bono039@hanyang.ac.kr');" onfocus="this.blur()">Support</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
